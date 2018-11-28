@@ -1,0 +1,22 @@
+:host {
+    display: block;
+}
+.filter {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 76px;
+    width: 76px;
+    justify-content: center;
+    align-items: center;
+    color: #C8B496;
+}
+.filter.active {
+    background-color: #C8B496;
+    color: white;
+}
+
+.filter img {
+    height: 36px;
+    width:36px;
+}

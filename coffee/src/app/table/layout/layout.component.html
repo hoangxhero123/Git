@@ -1,0 +1,13 @@
+<app-header [title]="'List'"></app-header>
+<div class="table item" *ngIf = "tables.length">
+    <app-table class="unit" *ngFor = "let item of tables" [table]="item" (inTable)="onTapTable($event)"></app-table>
+  </div>
+  <div class="table item" *ngIf = "!tables.length">
+    <h2>NO TABLE</h2>
+  </div>
+
+  <div class="menu item" >
+    <div class="icon" *ngFor="let tab of tabs">
+      <img [src]="tab.icon" (click)="clickTab(tab)" />
+    </div>
+  </div>

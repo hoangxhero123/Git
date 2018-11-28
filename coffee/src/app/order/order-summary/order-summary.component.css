@@ -1,0 +1,53 @@
+.order-summary {
+    display: flex;
+    padding: 0rem;
+    align-items: center;
+    background: #422912;
+    color: white;
+    justify-content: space-between;
+}
+.cart {
+    padding: 0.5rem;
+    display: flex;
+}
+.cart .fas {
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.cart span {
+    font-size: 8px;
+    align-self: flex-start;
+}
+.badge {
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 30%;
+}
+
+.price {
+
+}
+
+.btn-up {
+    font-size: 32px;
+    background: #422912;
+    border: none;
+    outline: none;
+}
+
+button {
+    color: white;
+}
+
+.btn-order {
+    background: #C8B496;
+    padding: 1rem;
+    outline: none;
+}
+
+.panel {
+    min-height: 50px;
+    background-color: white;
+}

@@ -1,0 +1,12 @@
+<div class="tb1 ord" (click)="tapOnTable(table)">
+  <div class="tb-top">
+    <div class="ord-contain quarter-1">{{table.name}}</div>
+    <div class="ord-contain quarter-2">{{table.orderName}}</div>
+  </div>
+  <div class="tb-bot">
+    <div class="ord-contain quarter-3">{{table.totalDishes}} Orders</div>
+    <div class="ord-contain quarter-4" [ngClass]="{'Open': table.status === 1, 'Serving': table.status === 2, 'Served': table.status === 3}">
+      {{table.status | tableStatus}}
+    </div>
+  </div>
+</div>
